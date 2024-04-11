@@ -32,4 +32,43 @@ public class CharacterCounterTest {
         assertEquals(5, result);
     }
 
+    @Test
+    public void testCountCharEmptyString() {
+        // Given
+        String inputString = "";
+        char targetChar = 'a';
+
+        // When
+        int result = Kata.countChar(inputString, targetChar);
+
+        // Then
+        assertEquals(0, result);
+    }
+
+    @Test
+    public void testCountChar_NoOccurrences() {
+        // Given
+        String inputString = "abcdef";
+        char targetChar = 'z';
+
+        // When
+        int result = Kata.countChar(inputString, targetChar);
+
+        // Then
+        assertEquals(0, result);
+    }
+
+    @Test
+    public void testCountChar_CaseInsensitive() {
+        // Given
+        String inputString = "AbcDeF";
+        char targetChar = 'a';
+
+        // When
+        int result = Kata.countChar(inputString, targetChar);
+
+        // Then
+        assertEquals(1, result);
+    }
+
 }
