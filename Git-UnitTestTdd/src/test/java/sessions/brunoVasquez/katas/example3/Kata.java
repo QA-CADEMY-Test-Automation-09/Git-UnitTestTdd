@@ -2,6 +2,11 @@ package sessions.brunoVasquez.katas.example3;
 import java.util.Arrays;
 public class Kata {
 
+    /**
+     *
+     * @param numbers
+     * @return
+     */
     public static String highAndLow(String numbers) {
         // Split the input string by space to get individual numbers
         String[] numberArray = numbers.split(" ");
