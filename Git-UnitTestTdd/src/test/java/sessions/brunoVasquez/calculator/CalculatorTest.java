@@ -11,11 +11,13 @@ public class CalculatorTest {
 
     @Test
     public void testAdd() {
-        assertEquals(5, calculator.add(2, 3));
+        int expectedResult = 5;
+        assertEquals(expectedResult, calculator.add(1, 3));
     }
 
     @Test
     public void testSubtract() {
-        assertEquals(2, calculator.subtract(5, 3));
+        int expectedResult = 1;
+        assertEquals(expectedResult, calculator.subtract(4, 3));
     }
 }
