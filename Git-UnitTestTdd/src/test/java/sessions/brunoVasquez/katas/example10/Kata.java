@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Kata {
 
     public static int findShort(String s) {
+        // Apply Split to string
         return 0;
     }
 
