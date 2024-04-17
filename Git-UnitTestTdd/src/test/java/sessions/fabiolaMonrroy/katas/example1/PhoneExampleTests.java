@@ -1,4 +1,5 @@
-package sessions.fabiolaMonrroy.katas.example1;
+package test.java.sessions.fabiolaMonrroy.katas.example1;
+import sessions.fabiolaMonrroy.katas.example1.Kata;
 
 import org.junit.jupiter.api.Test;
 
