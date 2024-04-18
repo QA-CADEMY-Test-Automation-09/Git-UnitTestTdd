@@ -1,4 +1,4 @@
-package sessions.victorCarrasco.katas.example4;
+package sessions.willyAranibar.katas.example4;
 import org.junit.jupiter.api.Test;
 import sessions.victorCarrasco.katas.example3.Kata;
 
