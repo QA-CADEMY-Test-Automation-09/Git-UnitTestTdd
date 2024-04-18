@@ -1,23 +1,15 @@
 package sessions.willyAranibar.katas.example1;
 
+import java.util.Arrays;
+
 public class Kata {
-    public static String createPhoneNumberV1(int[] numbers) {
-        String numberWithFormat = "(" + numbers[0] + numbers[1] + numbers[2] + ") " + numbers[3] + numbers[4] + numbers[5] + "-" + numbers[6] + numbers[7] + numbers[8] + numbers[9];
-        return numberWithFormat;
+
+    public static int findShort(String s) {
+        return 0;
     }
 
-    public static String createPhoneNumberV2(int[] numbers) {
-        String numberWithStringFormat = String.format("(%d%d%d) %d%d%d-%d%d%d%d", numbers[0], numbers[1], numbers[2], numbers[3], numbers[4], numbers[5], numbers[6], numbers[7], numbers[8], numbers[9]);
-        return numberWithStringFormat;
-    }
-
-    public static String createPhoneNumberV3(int[] numbers) {
-        String result = "(";
-        for (int i = 0; i < numbers.length; i++) {
-            result += (i == 3) ? ") " : "";
-            result += (i == 6) ? "-" : "";
-            result += numbers[i];
-        }
-        return result;
+    public static int findShortUsingStream(String s) {
+        // Split the string into an array of words, then find the minimum length using streams
+        return 0;
     }
 }

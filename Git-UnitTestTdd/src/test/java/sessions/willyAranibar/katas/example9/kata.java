@@ -1,33 +1,39 @@
-package sessions.victorCarrasco.katas.example4;
+package sessions.willyAlejandro.katas.example9;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.stream.IntStream;
 
-public class kata {
-    public static String camelCase(String palabras  ) {
+public class Kata {
+    public static String solve(String str) {
+        // Convert the string to char array to allow modifications
+        char[] reversed = str.toCharArray();
 
-        // Dividir la cadena en palabras individuales
-        String[] palabrasArray = palabras.split(" ");
+        // Initialize pointers for the start and end of the string
+        int start = 0;
+        int end = reversed.length - 1;
 
-// Crear una lista para almacenar las palabras con las primeras letras en mayúscula
-        List<String> palabrasCapitalizadas = new ArrayList<>();
-
-// Iterar sobre cada palabra y capitalizar las primeras letras
-        for (String palabra : palabrasArray) {
-            palabrasCapitalizadas.add(palabra.substring(0, 1).toUpperCase() + palabra.substring(1).toLowerCase());
+        // Iterate through the string to reverse it while maintaining spaces
+        while (start < end) {
+            // Skip spaces from the start
+            while (reversed[start] == ' ') {
+                start++;
+            }
+            // Skip spaces from the end
+            while (reversed[end] == ' ') {
+                end--;
+            }
+            // Swap characters at start and end if they are not spaces
+            if (reversed[start] != ' ' && reversed[end] != ' ') {
+                char temp = reversed[start];
+                reversed[start] = reversed[end];
+                reversed[end] = temp;
+            }
+            // Move pointers towards the center
+            start++;
+            end--;
         }
 
-// Unir las palabras capitalizadas en una sola cadena separadas por un espacio
-        String primerasLetrasMayus = String.join(" ", palabrasCapitalizadas);
-
-        //2
-        String seppalabras  = primerasLetrasMayus.concat("");
-
-        return primerasLetrasMayus + seppalabras;
-
-
-
-
-
+        // Convert char array back to string
+        return new String(reversed);
     }
+
 }

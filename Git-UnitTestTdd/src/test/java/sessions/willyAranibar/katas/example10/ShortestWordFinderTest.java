@@ -1,20 +1,16 @@
-package sessions.willyAranibar.katas.example1;
+package sessions.willyAranibar.katas.example11;
 
-import org.junit.jupiter.api.Test;
+import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+public class Kata {
 
-public class PhoneExampleTests {
-    @Test
-    public void tests() {
-        // Given
-        int[] arrayPhoneNumber = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
-
-        // When
-        String actualResult = Kata.createPhoneNumberV1(arrayPhoneNumber);
-
-        // Then
-        String expectedResult = "(123) 456-7890";
-        assertEquals(expectedResult, actualResult);
+    public static int findSmallestInt(int[] array) {
+        return 0;
     }
+
+    public static int findSmallestIntUsingStream(int[] array) {
+        // Find the smallest integer using streams
+        return 0;
+    }
+
 }
