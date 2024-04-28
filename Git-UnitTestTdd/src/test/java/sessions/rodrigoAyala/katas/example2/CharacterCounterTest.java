@@ -22,7 +22,7 @@ public class CharacterCounterTest {
     @Test
     public void testCountCharExample2() {
         // Given
-        String inputString = "Fancy fifth fly aloof";
+        String inputString = "Fancf fifth fly aloof";
         char targetChar = 'f';
 
         // When
